@@ -8,26 +8,93 @@
             "Trello"
         ],
         "overallHours": {
-            "tracked": 1900,
-            "expected": 2000
+            "tracked": 1950,
+            "expected": 2100
         },
         "timesheetSummary": {
-            "tracked": 95,
+            "tracked": 93,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project A",
-                "Project B",
-                "Project C",
-                "Project D",
-                "Project E"
+                "Project Alpha",
+                "Project Beta",
+                "Project Gamma",
+                "Project Delta",
+                "Project Epsilon"
+            ],
+            "values": [
+                550,
+                650,
+                450,
+                300,
+                200
+            ]
+        },
+        "hoursPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 220,
+                "total": 270
+            },
+            {
+                "name": "Bob",
+                "tracked": 260,
+                "total": 310
+            },
+            {
+                "name": "Charlie",
+                "tracked": 210,
+                "total": 260
+            }
+        ],
+        "timesheetsPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 19,
+                "total": 22
+            },
+            {
+                "name": "Bob",
+                "tracked": 23,
+                "total": 26
+            },
+            {
+                "name": "Charlie",
+                "tracked": 20,
+                "total": 23
+            }
+        ]
+    },
+    "2023": {
+        "client": "Beta Solutions",
+        "fiscalPeriod": "2023",
+        "integrations": [
+            "Jira",
+            "Slack",
+            "Monday.com"
+        ],
+        "overallHours": {
+            "tracked": 1800,
+            "expected": 2000
+        },
+        "timesheetSummary": {
+            "tracked": 90,
+            "expected": 100
+        },
+        "hoursPerProject": {
+            "labels": [
+                "Project X",
+                "Project Y",
+                "Project Z",
+                "Project W",
+                "Project V"
             ],
             "values": [
                 500,
                 600,
                 400,
-                300,
+                200,
                 100
             ]
         },
@@ -39,13 +106,13 @@
             },
             {
                 "name": "Bob",
-                "tracked": 250,
-                "total": 300
+                "tracked": 240,
+                "total": 290
             },
             {
                 "name": "Charlie",
-                "tracked": 200,
-                "total": 250
+                "tracked": 190,
+                "total": 240
             }
         ],
         "timesheetsPerEmployee": [
@@ -61,48 +128,48 @@
             },
             {
                 "name": "Charlie",
-                "tracked": 18,
-                "total": 20
+                "tracked": 19,
+                "total": 22
             }
         ]
     },
-    "2023": {
-        "client": "ACME Corp",
-        "fiscalPeriod": "2023",
+    "2022": {
+        "client": "Gamma Tech",
+        "fiscalPeriod": "2022",
         "integrations": [
             "Jira",
             "Slack",
-            "Monday.com"
+            "Asana"
         ],
         "overallHours": {
             "tracked": 1700,
-            "expected": 2000
+            "expected": 1900
         },
         "timesheetSummary": {
-            "tracked": 85,
+            "tracked": 89,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project A",
-                "Project B",
-                "Project C",
-                "Project D",
-                "Project E"
+                "Project Red",
+                "Project Blue",
+                "Project Green",
+                "Project Yellow",
+                "Project Purple"
             ],
             "values": [
-                400,
-                500,
-                400,
-                300,
-                200
+                450,
+                550,
+                350,
+                250,
+                100
             ]
         },
         "hoursPerEmployee": [
             {
                 "name": "Alice",
                 "tracked": 180,
-                "total": 220
+                "total": 230
             },
             {
                 "name": "Bob",
@@ -111,7 +178,7 @@
             },
             {
                 "name": "Charlie",
-                "tracked": 180,
+                "tracked": 170,
                 "total": 220
             }
         ],
@@ -128,41 +195,41 @@
             },
             {
                 "name": "Charlie",
-                "tracked": 17,
-                "total": 20
+                "tracked": 18,
+                "total": 22
             }
         ]
     },
-    "2022": {
-        "client": "ACME Corp",
-        "fiscalPeriod": "2022",
+    "2021": {
+        "client": "Delta Inc.",
+        "fiscalPeriod": "2021",
         "integrations": [
             "Jira",
             "Slack",
-            "Asana"
+            "Trello"
         ],
         "overallHours": {
             "tracked": 1600,
-            "expected": 2000
+            "expected": 1800
         },
         "timesheetSummary": {
-            "tracked": 80,
+            "tracked": 85,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project A",
-                "Project B",
-                "Project C",
-                "Project D",
-                "Project E"
+                "Project 1",
+                "Project 2",
+                "Project 3",
+                "Project 4",
+                "Project 5"
             ],
             "values": [
                 400,
                 500,
                 300,
-                300,
-                200
+                200,
+                100
             ]
         },
         "hoursPerEmployee": [
@@ -174,85 +241,18 @@
             {
                 "name": "Bob",
                 "tracked": 210,
-                "total": 270
+                "total": 260
             },
             {
                 "name": "Charlie",
-                "tracked": 170,
-                "total": 220
+                "tracked": 160,
+                "total": 210
             }
         ],
         "timesheetsPerEmployee": [
             {
                 "name": "Alice",
                 "tracked": 16,
-                "total": 20
-            },
-            {
-                "name": "Bob",
-                "tracked": 20,
-                "total": 25
-            },
-            {
-                "name": "Charlie",
-                "tracked": 16,
-                "total": 20
-            }
-        ]
-    },
-    "2021": {
-        "client": "ACME Corp",
-        "fiscalPeriod": "2021",
-        "integrations": [
-            "Jira",
-            "Slack",
-            "Trello"
-        ],
-        "overallHours": {
-            "tracked": 1500,
-            "expected": 2000
-        },
-        "timesheetSummary": {
-            "tracked": 75,
-            "expected": 100
-        },
-        "hoursPerProject": {
-            "labels": [
-                "Project A",
-                "Project B",
-                "Project C",
-                "Project D",
-                "Project E"
-            ],
-            "values": [
-                300,
-                400,
-                300,
-                200,
-                300
-            ]
-        },
-        "hoursPerEmployee": [
-            {
-                "name": "Alice",
-                "tracked": 150,
-                "total": 200
-            },
-            {
-                "name": "Bob",
-                "tracked": 200,
-                "total": 250
-            },
-            {
-                "name": "Charlie",
-                "tracked": 150,
-                "total": 200
-            }
-        ],
-        "timesheetsPerEmployee": [
-            {
-                "name": "Alice",
-                "tracked": 15,
                 "total": 20
             },
             {
