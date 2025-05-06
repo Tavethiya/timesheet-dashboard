@@ -40,7 +40,7 @@ export class BarChartComponent implements AfterViewInit {
         labels: this.labels,
         datasets: [
           {
-            label: 'Tracked',
+            label: 'Allocated Hours',
             data: this.data, // Tracked data
             backgroundColor: '#4b5563', // Dark gray for tracked
             borderRadius: 10, // Rounded corners for bars

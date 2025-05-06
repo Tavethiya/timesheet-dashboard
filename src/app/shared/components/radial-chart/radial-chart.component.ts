@@ -25,6 +25,7 @@ Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
 })
 export class RadialChartComponent implements AfterViewInit, OnChanges {
   @Input() title!: string;
+  @Input() labels: string[] = ['Tracked', 'Remaining']; // Default labels
   @Input() data!: { tracked: number; expected: number };
 
   @ViewChild('chartCanvas') chartRef!: ElementRef<HTMLCanvasElement>;
@@ -57,7 +58,7 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
     const config: ChartConfiguration<'doughnut'> = {
       type: 'doughnut',
       data: {
-        labels: ['Tracked', 'Remaining'],
+        labels: this.labels,
         datasets: [{
           data: [this.data.tracked, this.data.expected - this.data.tracked],
           backgroundColor: ['#4b5563', '#9ca3af'], // Medium gray and light gray
@@ -113,7 +114,7 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
             ctx.textBaseline = 'middle';
             ctx.font = 'bold 16px Arial';
             ctx.fillStyle = '#111827'; // Dark gray
-            ctx.fillText(`Expected: ${expected}`, centerX, centerY - 30);
+            ctx.fillText(`Total: ${expected}`, centerX, centerY - 30);
 
             // Display Tracked and Remaining
             ctx.font = '12px Arial';
@@ -121,8 +122,12 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
             const tracked = chart.config.data?.datasets?.[0]?.data?.[0] || 0;
             const remaining = chart.config.data?.datasets?.[0]?.data?.[1] || 0;
 
-            ctx.fillText(`Tracked: ${tracked}`, centerX, centerY + 0);
-            ctx.fillText(`Remaining: ${remaining}`, centerX, centerY + 20);
+            // ctx.fillText(`Tracked: ${tracked}`, centerX, centerY + 0);
+            // ctx.fillText(`Remaining: ${remaining}`, centerX, centerY + 20);
+
+            const [trackedLabel, remainingLabel] = chart.config.data.labels || [];
+            ctx.fillText(`${trackedLabel}: ${tracked}`, centerX, centerY + 0);
+            ctx.fillText(`${remainingLabel}: ${remaining}`, centerX, centerY + 20);
 
             ctx.restore();
           }

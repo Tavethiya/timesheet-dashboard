@@ -23,10 +23,10 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
-            <app-radial-chart [title]="'Overall Hours'" [data]="data.overallHours"
+            <app-radial-chart [title]="'Overall Hours'" [data]="data.overallHours" [labels]="['Tracked', 'Expected']"
                 class="p-4 bg-white rounded-lg shadow-md"></app-radial-chart>
             <app-radial-chart [title]="'Timesheet Summary'" [data]="data.timesheetSummary"
-                class="p-4 bg-white rounded-lg shadow-md"></app-radial-chart>
+                [labels]="['Created', 'Expected']" class=" p-4 bg-white rounded-lg shadow-md"></app-radial-chart>
             <app-bar-chart [title]="'Hours per Project'" [labels]="data.hoursPerProject.labels"
                 [data]="data.hoursPerProject.values" class="p-4 bg-white rounded-lg shadow-md"></app-bar-chart>
         </div>
