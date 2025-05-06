@@ -24,7 +24,7 @@
                 "Compliance Tracker"
             ],
             "values": [
-                580,
+                110,
                 630,
                 420,
                 210,
@@ -67,7 +67,7 @@
         ]
     },
     "2023": {
-        "client": "Beta Solutions",
+        "client": "ACME Corp",
         "fiscalPeriod": "2023",
         "integrations": [
             "Jira",
@@ -91,8 +91,8 @@
                 "Training Portal"
             ],
             "values": [
-                510,
-                590,
+                500,
+                90,
                 470,
                 190,
                 60
@@ -134,7 +134,7 @@
         ]
     },
     "2022": {
-        "client": "Gamma Tech",
+        "client": "ACME Corp",
         "fiscalPeriod": "2022",
         "integrations": [
             "Jira",
@@ -201,7 +201,7 @@
         ]
     },
     "2021": {
-        "client": "Delta Inc.",
+        "client": "ACME Corp",
         "fiscalPeriod": "2021",
         "integrations": [
             "Jira",
@@ -225,11 +225,11 @@
                 "Code Review Tool"
             ],
             "values": [
-                400,
+                120,
                 480,
                 320,
                 250,
-                130
+                1000
             ]
         },
         "hoursPerEmployee": [
