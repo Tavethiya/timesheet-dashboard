@@ -1,0 +1,270 @@
+{
+    "2024": {
+        "client": "ACME Corp",
+        "fiscalPeriod": "2024",
+        "integrations": [
+            "Jira",
+            "Slack",
+            "Trello"
+        ],
+        "overallHours": {
+            "tracked": 1900,
+            "expected": 2000
+        },
+        "timesheetSummary": {
+            "tracked": 95,
+            "expected": 100
+        },
+        "hoursPerProject": {
+            "labels": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D",
+                "Project E"
+            ],
+            "values": [
+                500,
+                600,
+                400,
+                300,
+                100
+            ]
+        },
+        "hoursPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 200,
+                "total": 250
+            },
+            {
+                "name": "Bob",
+                "tracked": 250,
+                "total": 300
+            },
+            {
+                "name": "Charlie",
+                "tracked": 200,
+                "total": 250
+            }
+        ],
+        "timesheetsPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 18,
+                "total": 20
+            },
+            {
+                "name": "Bob",
+                "tracked": 22,
+                "total": 25
+            },
+            {
+                "name": "Charlie",
+                "tracked": 18,
+                "total": 20
+            }
+        ]
+    },
+    "2023": {
+        "client": "ACME Corp",
+        "fiscalPeriod": "2023",
+        "integrations": [
+            "Jira",
+            "Slack",
+            "Monday.com"
+        ],
+        "overallHours": {
+            "tracked": 1700,
+            "expected": 2000
+        },
+        "timesheetSummary": {
+            "tracked": 85,
+            "expected": 100
+        },
+        "hoursPerProject": {
+            "labels": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D",
+                "Project E"
+            ],
+            "values": [
+                400,
+                500,
+                400,
+                300,
+                200
+            ]
+        },
+        "hoursPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 180,
+                "total": 220
+            },
+            {
+                "name": "Bob",
+                "tracked": 220,
+                "total": 270
+            },
+            {
+                "name": "Charlie",
+                "tracked": 180,
+                "total": 220
+            }
+        ],
+        "timesheetsPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 17,
+                "total": 20
+            },
+            {
+                "name": "Bob",
+                "tracked": 21,
+                "total": 25
+            },
+            {
+                "name": "Charlie",
+                "tracked": 17,
+                "total": 20
+            }
+        ]
+    },
+    "2022": {
+        "client": "ACME Corp",
+        "fiscalPeriod": "2022",
+        "integrations": [
+            "Jira",
+            "Slack",
+            "Asana"
+        ],
+        "overallHours": {
+            "tracked": 1600,
+            "expected": 2000
+        },
+        "timesheetSummary": {
+            "tracked": 80,
+            "expected": 100
+        },
+        "hoursPerProject": {
+            "labels": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D",
+                "Project E"
+            ],
+            "values": [
+                400,
+                500,
+                300,
+                300,
+                200
+            ]
+        },
+        "hoursPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 170,
+                "total": 220
+            },
+            {
+                "name": "Bob",
+                "tracked": 210,
+                "total": 270
+            },
+            {
+                "name": "Charlie",
+                "tracked": 170,
+                "total": 220
+            }
+        ],
+        "timesheetsPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 16,
+                "total": 20
+            },
+            {
+                "name": "Bob",
+                "tracked": 20,
+                "total": 25
+            },
+            {
+                "name": "Charlie",
+                "tracked": 16,
+                "total": 20
+            }
+        ]
+    },
+    "2021": {
+        "client": "ACME Corp",
+        "fiscalPeriod": "2021",
+        "integrations": [
+            "Jira",
+            "Slack",
+            "Trello"
+        ],
+        "overallHours": {
+            "tracked": 1500,
+            "expected": 2000
+        },
+        "timesheetSummary": {
+            "tracked": 75,
+            "expected": 100
+        },
+        "hoursPerProject": {
+            "labels": [
+                "Project A",
+                "Project B",
+                "Project C",
+                "Project D",
+                "Project E"
+            ],
+            "values": [
+                300,
+                400,
+                300,
+                200,
+                300
+            ]
+        },
+        "hoursPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 150,
+                "total": 200
+            },
+            {
+                "name": "Bob",
+                "tracked": 200,
+                "total": 250
+            },
+            {
+                "name": "Charlie",
+                "tracked": 150,
+                "total": 200
+            }
+        ],
+        "timesheetsPerEmployee": [
+            {
+                "name": "Alice",
+                "tracked": 15,
+                "total": 20
+            },
+            {
+                "name": "Bob",
+                "tracked": 20,
+                "total": 25
+            },
+            {
+                "name": "Charlie",
+                "tracked": 15,
+                "total": 20
+            }
+        ]
+    }
+}

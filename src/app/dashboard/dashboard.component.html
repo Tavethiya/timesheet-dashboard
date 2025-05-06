@@ -1,0 +1,42 @@
+<div class="p-6 bg-gray-50 min-h-screen">
+
+    <!-- Header Section -->
+    <header class="mb-8 bg-gray-500 text-white p-6 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold">Timesheet Dashboard</h1>
+        <p class="text-lg mt-2">Track and analyze your team's performance effectively</p>
+    </header>
+
+    <div class="mb-8 rounded-lg mb-10 w-full bg-gray-100 p-4 shadow-lg">
+        <div class="p-4 rounded flex justify-between items-center">
+            <app-info-card [client]="data.client" [fiscalPeriod]="data.fiscalPeriod"
+                [integrations]="data.integrations"></app-info-card>
+            <div class="mb-8 min-w-[200px]">
+                <label for="year" class="block mb-2 text-lg font-semibold text-gray-800">Fiscal Year</label>
+                <select id="year" [(ngModel)]="selectedYear" (change)="onYearChange(selectedYear)"
+                    class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 h-[250px]">
+        <app-radial-chart [title]="'Overall Hours'" [data]="data.overallHours"
+            class="p-4 bg-white rounded-lg shadow-md"></app-radial-chart>
+        <app-radial-chart [title]="'Timesheet Summary'" [data]="data.timesheetSummary"
+            class="p-4 bg-white rounded-lg shadow-md"></app-radial-chart>
+        <app-bar-chart [title]="'Hours per Project'" [labels]="data.hoursPerProject.labels"
+            [data]="data.hoursPerProject.values" class="p-4 bg-white rounded-lg shadow-md"></app-bar-chart>
+        <!-- <app-bar-chart [title]="'Hours per Employee'" [labels]="data.hoursPerEmployee.labels"
+            [data]="data.hoursPerEmployee.values" class="p-4 bg-white rounded-lg shadow-md"></app-bar-chart>
+        <app-bar-chart [title]="'Timesheets per Employee'" [labels]="data.timesheetsPerEmployee.labels"
+            [data]="data.timesheetsPerEmployee.values" class="p-4 bg-white rounded-lg shadow-md"></app-bar-chart> -->
+
+        <app-progress-list [title]="'Timesheets per Employee'"
+            [employeeData]="data.timesheetsPerEmployee"></app-progress-list>
+
+        <app-progress-list [title]="'Hours per Employee'" [employeeData]="data.hoursPerEmployee"></app-progress-list>
+    </div>
+</div>

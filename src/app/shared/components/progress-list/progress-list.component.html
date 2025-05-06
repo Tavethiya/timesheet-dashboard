@@ -1,0 +1,16 @@
+<div class="bg-white p-4 rounded shadow">
+    <h3 class="text-lg font-semibold mb-2">{{ title }}</h3>
+    <!-- For loop  -->
+    <div class="border border-gray-200 pt-4 px-4 pb-4 rounded max-h-96 overflow-y-auto">
+        <div *ngFor="let item of employeeData" class="mb-4">
+            <div class="flex justify-between items-center mb-2">
+                <h3 class="text-sm font-bold text-gray-700">{{ item.name }}</h3>
+                <span class="text-sm font-semibold text-gray-900">{{ item.tracked }} / {{ item.total }}</span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="w-full bg-gray-200 rounded-full h-4">
+                <div class="bg-gray-500 h-4 rounded-full" [style.width.%]="(item.tracked / item.total) * 100"></div>
+            </div>
+        </div>
+    </div>
+</div>
