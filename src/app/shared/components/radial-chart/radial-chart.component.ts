@@ -62,8 +62,8 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
           data: [this.data.tracked, this.data.expected - this.data.tracked],
           backgroundColor: ['#4b5563', '#9ca3af'], // Medium gray and light gray
           borderColor: '#e5e7eb', // Light border for subtle contrast
-          borderWidth: 2, // Slightly thicker border for better visibility
-          borderRadius: 10 // Adds rounded edges to the doughnut segments
+          // borderWidth: 2, // Slightly thicker border for better visibility
+          borderRadius: 70 // Adds rounded edges to the doughnut segments
         }]
       },
       options: {
@@ -90,9 +90,9 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
             borderWidth: 1
           }
         },
-        cutout: '60%', // Adjusts the inner radius of the doughnut chart
+        cutout: '80%', // Adjusts the inner radius of the doughnut chart
         layout: {
-          padding: 20 // Adds padding around the chart
+          padding: 30 // Adds padding around the chart
         }
       },
       plugins: [
@@ -113,7 +113,7 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
             ctx.textBaseline = 'middle';
             ctx.font = 'bold 16px Arial';
             ctx.fillStyle = '#111827'; // Dark gray
-            ctx.fillText(`Expected: ${expected}`, centerX, centerY - 20);
+            ctx.fillText(`Expected: ${expected}`, centerX, centerY - 30);
 
             // Display Tracked and Remaining
             ctx.font = '12px Arial';
@@ -121,8 +121,8 @@ export class RadialChartComponent implements AfterViewInit, OnChanges {
             const tracked = chart.config.data?.datasets?.[0]?.data?.[0] || 0;
             const remaining = chart.config.data?.datasets?.[0]?.data?.[1] || 0;
 
-            ctx.fillText(`Tracked: ${tracked}`, centerX, centerY + 10);
-            ctx.fillText(`Remaining: ${remaining}`, centerX, centerY + 30);
+            ctx.fillText(`Tracked: ${tracked}`, centerX, centerY + 0);
+            ctx.fillText(`Remaining: ${remaining}`, centerX, centerY + 20);
 
             ctx.restore();
           }

@@ -18,7 +18,7 @@ import { DashboardData, YearData } from '../shared/models/dashboard-data.model';
 export class DashboardComponent {
   fullData: DashboardData = rawData;
   years: string[] = Object.keys(rawData);
-  selectedYear: string = this.years[0];
+  selectedYear: string = this.years[this.years.length - 1];
   data: YearData = this.fullData[this.selectedYear];
 
   onYearChange(year: string) {

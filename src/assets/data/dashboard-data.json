@@ -12,57 +12,57 @@
             "expected": 2100
         },
         "timesheetSummary": {
-            "tracked": 93,
+            "tracked": 50,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project Alpha",
-                "Project Beta",
-                "Project Gamma",
-                "Project Delta",
-                "Project Epsilon"
+                "Platform Upgrade",
+                "AI Chatbot",
+                "Customer Portal",
+                "HR Automation",
+                "Compliance Tracker"
             ],
             "values": [
-                550,
-                650,
-                450,
-                300,
-                200
+                580,
+                630,
+                420,
+                210,
+                110
             ]
         },
         "hoursPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 220,
-                "total": 270
+                "name": "David",
+                "tracked": 210,
+                "total": 260
             },
             {
-                "name": "Bob",
-                "tracked": 260,
+                "name": "Eva",
+                "tracked": 250,
                 "total": 310
             },
             {
-                "name": "Charlie",
-                "tracked": 210,
-                "total": 260
+                "name": "Frank",
+                "tracked": 30,
+                "total": 280
             }
         ],
         "timesheetsPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 19,
-                "total": 22
+                "name": "David",
+                "tracked": 20,
+                "total": 23
             },
             {
-                "name": "Bob",
-                "tracked": 23,
+                "name": "Eva",
+                "tracked": 10,
                 "total": 26
             },
             {
-                "name": "Charlie",
-                "tracked": 20,
-                "total": 23
+                "name": "Frank",
+                "tracked": 21,
+                "total": 24
             }
         ]
     },
@@ -75,60 +75,60 @@
             "Monday.com"
         ],
         "overallHours": {
-            "tracked": 1800,
+            "tracked": 1600,
             "expected": 2000
         },
         "timesheetSummary": {
-            "tracked": 90,
+            "tracked": 87,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project X",
-                "Project Y",
-                "Project Z",
-                "Project W",
-                "Project V"
+                "Mobile Redesign",
+                "Billing System Revamp",
+                "Cloud Migration",
+                "Internal Dashboard",
+                "Training Portal"
             ],
             "values": [
-                500,
-                600,
-                400,
-                200,
-                100
+                510,
+                590,
+                470,
+                190,
+                60
             ]
         },
         "hoursPerEmployee": [
             {
-                "name": "Alice",
+                "name": "Grace",
                 "tracked": 200,
-                "total": 250
+                "total": 240
             },
             {
-                "name": "Bob",
-                "tracked": 240,
+                "name": "Henry",
+                "tracked": 150,
                 "total": 290
             },
             {
-                "name": "Charlie",
-                "tracked": 190,
-                "total": 240
+                "name": "Ivy",
+                "tracked": 255,
+                "total": 260
             }
         ],
         "timesheetsPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 18,
-                "total": 20
+                "name": "Grace",
+                "tracked": 20,
+                "total": 21
             },
             {
-                "name": "Bob",
-                "tracked": 22,
+                "name": "Henry",
+                "tracked": 15,
                 "total": 25
             },
             {
-                "name": "Charlie",
-                "tracked": 19,
+                "name": "Ivy",
+                "tracked": 17,
                 "total": 22
             }
         ]
@@ -142,59 +142,59 @@
             "Asana"
         ],
         "overallHours": {
-            "tracked": 1700,
+            "tracked": 1200,
             "expected": 1900
         },
         "timesheetSummary": {
-            "tracked": 89,
+            "tracked": 95,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project Red",
-                "Project Blue",
-                "Project Green",
-                "Project Yellow",
-                "Project Purple"
+                "API Refactor",
+                "Legacy Cleanup",
+                "Admin Console",
+                "Analytics Suite",
+                "Payroll Enhancer"
             ],
             "values": [
-                450,
-                550,
-                350,
-                250,
+                460,
+                520,
+                370,
+                260,
                 100
             ]
         },
         "hoursPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 180,
+                "name": "Jack",
+                "tracked": 150,
                 "total": 230
             },
             {
-                "name": "Bob",
-                "tracked": 220,
+                "name": "Kara",
+                "tracked": 200,
                 "total": 270
             },
             {
-                "name": "Charlie",
-                "tracked": 170,
+                "name": "Liam",
+                "tracked": 210,
                 "total": 220
             }
         ],
         "timesheetsPerEmployee": [
             {
-                "name": "Alice",
+                "name": "Jack",
                 "tracked": 17,
                 "total": 20
             },
             {
-                "name": "Bob",
-                "tracked": 21,
+                "name": "Kara",
+                "tracked": 20,
                 "total": 25
             },
             {
-                "name": "Charlie",
+                "name": "Liam",
                 "tracked": 18,
                 "total": 22
             }
@@ -209,59 +209,59 @@
             "Trello"
         ],
         "overallHours": {
-            "tracked": 1600,
+            "tracked": 1580,
             "expected": 1800
         },
         "timesheetSummary": {
-            "tracked": 85,
+            "tracked": 95,
             "expected": 100
         },
         "hoursPerProject": {
             "labels": [
-                "Project 1",
-                "Project 2",
-                "Project 3",
-                "Project 4",
-                "Project 5"
+                "Bug Tracker Revamp",
+                "Partner Integration",
+                "Admin Reports",
+                "Live Support Setup",
+                "Code Review Tool"
             ],
             "values": [
                 400,
-                500,
-                300,
-                200,
-                100
+                480,
+                320,
+                250,
+                130
             ]
         },
         "hoursPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 170,
+                "name": "Mona",
+                "tracked": 175,
                 "total": 220
             },
             {
-                "name": "Bob",
-                "tracked": 210,
+                "name": "Nate",
+                "tracked": 215,
                 "total": 260
             },
             {
-                "name": "Charlie",
-                "tracked": 160,
+                "name": "Olivia",
+                "tracked": 195,
                 "total": 210
             }
         ],
         "timesheetsPerEmployee": [
             {
-                "name": "Alice",
-                "tracked": 16,
+                "name": "Mona",
+                "tracked": 20,
                 "total": 20
             },
             {
-                "name": "Bob",
-                "tracked": 20,
+                "name": "Nate",
+                "tracked": 24,
                 "total": 25
             },
             {
-                "name": "Charlie",
+                "name": "Olivia",
                 "tracked": 15,
                 "total": 20
             }

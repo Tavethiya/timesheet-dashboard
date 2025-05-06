@@ -72,6 +72,7 @@ export class BarChartComponent implements AfterViewInit {
             }
           },
           y: {
+            beginAtZero: true, // Start y-axis at zero
             stacked: true, // Enable stacking for y-axis
             ticks: {
               color: '#4b5563' // Dark gray for y-axis labels
